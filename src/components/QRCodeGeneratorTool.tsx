@@ -118,7 +118,7 @@ const EVENT_PRESET_CATEGORIES = [
   { id: 'whatsapp', label: 'WhatsApp Community', icon: MessageCircle, defaultCallout: 'JOIN WHATSAPP GROUP', sampleUrl: 'https://chat.whatsapp.com/invite-code' },
   { id: 'giving', label: 'Giving / EcoCash / Donations', icon: DollarSign, defaultCallout: 'SCAN TO GIVE / DONATE', sampleUrl: 'https://paynow.co.zw/payment-link' },
   { id: 'social', label: 'Instagram / Spotify', icon: Music, defaultCallout: 'FOLLOW US / LISTEN NOW', sampleUrl: 'https://instagram.com/rtson_creations' },
-  { id: 'custom', label: 'Custom Website URL', icon: Globe, defaultCallout: 'SCAN HERE FOR MORE INFO', sampleUrl: 'https://rtsoncreations.com' },
+  { id: 'custom', label: 'Custom Website URL', icon: Globe, defaultCallout: 'SCAN HERE FOR MORE INFO', sampleUrl: 'https://rtsoncreations.co.zw' },
 ];
 
 const THEME_PRESETS: {

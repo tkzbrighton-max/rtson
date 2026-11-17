@@ -2,7 +2,9 @@
 
 A high-converting, professional Graphic Design Studio web application built with **React 19**, **Vite**, **Tailwind CSS**, and **Firebase Firestore**.
 
-**Repository**: [https://github.com/tkzbrighton-max/rtson](https://github.com/tkzbrighton-max/rtson)
+- **Official Website**: [https://rtsoncreations.co.zw](https://rtsoncreations.co.zw)
+- **Vercel Deployment**: [https://rtson.vercel.app](https://rtson.vercel.app)
+- **Repository**: [https://github.com/tkzbrighton-max/rtson](https://github.com/tkzbrighton-max/rtson)
 
 ---
 
@@ -44,9 +46,25 @@ npm run build
 
 ---
 
-## 🌐 Deploy to Vercel (One-Click)
+## 🌐 Custom Domain Setup on Vercel (`rtsoncreations.co.zw`)
 
-1. Import this repository into [Vercel](https://vercel.com).
-2. The `vercel.json` file will automatically configure the build settings (`vite build`) and output directory (`dist`).
-3. Click **Deploy**.
-4. Add your custom domain under **Project Settings > Domains** for automated, free SSL certificates.
+To connect **`https://rtsoncreations.co.zw`** to your Vercel deployment (`rtson.vercel.app`):
+
+1. **In Vercel Dashboard**:
+   - Go to your project (`rtson`) → **Settings** → **Domains**.
+   - Type **`rtsoncreations.co.zw`** and click **Add**.
+   - Vercel will also suggest adding **`www.rtsoncreations.co.zw`** (select redirect to `rtsoncreations.co.zw`).
+
+2. **At your Domain Registrar / DNS Provider** (where `rtsoncreations.co.zw` is registered):
+   - **For Apex Domain (`rtsoncreations.co.zw`)**:
+     - Type: `A`
+     - Name: `@` (or leave blank)
+     - Value: `76.76.21.21`
+   - **For Subdomain (`www.rtsoncreations.co.zw`)**:
+     - Type: `CNAME`
+     - Name: `www`
+     - Value: `cname.vercel-dns.com`
+
+3. **Automatic SSL/TLS**:
+   - Once DNS propagates (usually 5–30 minutes), Vercel automatically generates a free Let's Encrypt SSL certificate and activates `https://rtsoncreations.co.zw`.
+

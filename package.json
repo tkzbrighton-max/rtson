@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/tkzbrighton-max/rtson.git"
   },
-  "homepage": "https://github.com/tkzbrighton-max/rtson#readme",
+  "homepage": "https://rtsoncreations.co.zw",
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
