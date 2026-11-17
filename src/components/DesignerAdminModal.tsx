@@ -165,11 +165,11 @@ export const DesignerAdminModal: React.FC<DesignerAdminModalProps> = ({
 
   // GitHub Repository State
   const [githubRepoUrl, setGithubRepoUrl] = useState<string>(() => {
-    return localStorage.getItem('rtson_github_repo') || 'https://github.com/rtsondesigns/rtson-web-studio';
+    return localStorage.getItem('rtson_github_repo') || 'https://github.com/tkzbrighton-max/rtson';
   });
   const [githubBranch, setGithubBranch] = useState<string>('main');
   const [isGithubConnected, setIsGithubConnected] = useState<boolean>(() => {
-    return localStorage.getItem('rtson_github_connected') === 'true';
+    return localStorage.getItem('rtson_github_connected') !== 'false';
   });
 
   // Picsart State

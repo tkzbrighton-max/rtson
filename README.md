@@ -2,6 +2,8 @@
 
 A high-converting, professional Graphic Design Studio web application built with **React 19**, **Vite**, **Tailwind CSS**, and **Firebase Firestore**.
 
+**Repository**: [https://github.com/tkzbrighton-max/rtson](https://github.com/tkzbrighton-max/rtson)
+
 ---
 
 ## 🚀 Features
