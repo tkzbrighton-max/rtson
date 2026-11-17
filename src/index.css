@@ -1,0 +1,398 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #12151a;
+    color: #f8fafc;
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Prevent auto-zoom on mobile inputs */
+  @media (max-width: 640px) {
+    input, select, textarea {
+      font-size: 16px !important;
+    }
+  }
+
+  /* Global optimized image rendering */
+  img {
+    content-visibility: auto;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+}
+
+/* Hardware Acceleration Helper for high-DPI displays & smooth GPU frame rates */
+.gpu-layer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
+/* Hide scrollbars while maintaining smooth scroll capability */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Safe area padding utilities for notched mobile phones */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 1rem);
+}
+
+/* Studio Refined Charcoal Slate and Electric Orange Utility Classes */
+.bg-navy-dark {
+  background-color: #12151a;
+}
+
+.bg-navy-surface {
+  background-color: #181c24;
+}
+
+.bg-navy-card {
+  background-color: #1e232d;
+}
+
+.bg-gradient-navy-orange {
+  background-image: linear-gradient(135deg, #12151a 0%, #1e232d 50%, #291505 100%);
+}
+
+.bg-gradient-navy-to-orange-subtle {
+  background-image: linear-gradient(to right, #12151a 0%, #181c24 60%, #291505 100%);
+}
+
+.bg-gradient-dark-orange {
+  background-image: linear-gradient(135deg, #ea580c 0%, #ff6b00 50%, #ff8800 100%);
+}
+
+.bg-gradient-navy-btn {
+  background-image: linear-gradient(135deg, #ff6b00 0%, #ff8800 60%, #f97316 100%);
+}
+
+.text-gradient-orange {
+  background-image: linear-gradient(135deg, #ffffff 0%, #ff8800 45%, #ff5500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-navy-orange {
+  background-image: linear-gradient(135deg, #ffffff 0%, #ff8800 50%, #ff6b00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Refined Shimmering Text Gradient (Subtle & Elegant, not loud) */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-text-shimmer {
+  background: linear-gradient(90deg, #ff6b00 0%, #ff8800 25%, #ffffff 50%, #ff8800 75%, #ff6b00 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease-in-out infinite;
+}
+
+@keyframes floatTag {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-tag {
+  animation: floatTag 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.25;
+    filter: drop-shadow(0 0 10px rgba(212, 241, 93, 0.2));
+  }
+  50% {
+    opacity: 0.55;
+    filter: drop-shadow(0 0 20px rgba(212, 241, 93, 0.35));
+  }
+}
+
+.animate-glow-pulse {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Side Sliding Text Animations (Horizontal flow, strictly no popping/scaling) */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes marqueeSlide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeSlide 80s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes paintDrift {
+  0% {
+    transform: scale(1.02) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.06) translate(-10px, -6px);
+  }
+  100% {
+    transform: scale(1.02) translate(0, 0);
+  }
+}
+
+.animate-paint-drift {
+  animation: paintDrift 20s ease-in-out infinite;
+}
+
+@keyframes characterBob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.animate-character-bob {
+  animation: characterBob 4s ease-in-out infinite;
+}
+
+@keyframes pointPulse {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translate(10px, -8px) scale(1.15);
+    opacity: 1;
+    filter: drop-shadow(0 0 12px rgba(212, 241, 93, 0.9));
+  }
+}
+
+.animate-point-pulse {
+  animation: pointPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes laserRay {
+  0%, 100% {
+    stroke-dashoffset: 0;
+    opacity: 0.5;
+  }
+  50% {
+    stroke-dashoffset: -20;
+    opacity: 1;
+  }
+}
+
+/* ========================================================================= */
+/* TEXT ANIMATION SUITE FOR PAGES                                            */
+/* Smooth, hardware-accelerated text entrance, shimmer, glow, & reveals      */
+/* ========================================================================= */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes titleReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(22px) scale(0.985);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes textGradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glowTextSubtle {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(212, 241, 93, 0.25);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(212, 241, 93, 0.6);
+  }
+}
+
+@keyframes badgePulseSoft {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(212, 241, 93, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(212, 241, 93, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-title-reveal {
+  animation: titleReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-text-gradient-flow {
+  background: linear-gradient(135deg, #ff6b00 0%, #ff8800 25%, #ffffff 50%, #ffa500 75%, #ff6b00 100%);
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradientFlow 6s ease-in-out infinite;
+}
+
+.animate-glow-text {
+  animation: glowTextSubtle 3.5s ease-in-out infinite;
+}
+
+.animate-badge-pulse {
+  animation: badgePulseSoft 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* ========================================================================= */
+/* OFFICIAL PRINTING MECHANISM & A4 PRINT MEDIA STYLES                       */
+/* Isolates quotation document, removes all UI chrome, cleans page margins   */
+/* ========================================================================= */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide all non-printable chrome */
+  .no-print,
+  nav,
+  footer,
+  aside,
+  header,
+  .mobile-nav,
+  .floating-contact,
+  button,
+  .modal-backdrop,
+  #theme-selector-root,
+  .admin-bar {
+    display: none !important;
+  }
+
+  /* Printable quotation document */
+  .print-document-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Keep table borders crisp and black */
+  table, tr, td, th {
+    border-color: #000000 !important;
+    page-break-inside: avoid;
+  }
+
+  /* Avoid awkward page breaks */
+  h1, h2, h3, h4, .no-page-break {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+}
+
+

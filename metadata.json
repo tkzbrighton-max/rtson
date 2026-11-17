@@ -1,0 +1,6 @@
+{
+  "name": "R'tson Creations - Graphic Design & Portfolio Showcase",
+  "description": "Studio portfolio and order placement platform by R'tson Creations for individuals, businesses, and organizations — featuring responsive website design, web applications, mobile apps, vector branding, 3D flyers, interactive Photo Retouching Studio, and instant WhatsApp ordering.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

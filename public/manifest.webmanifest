@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "R'tson Creations - Graphic Design & Pre-Press Studio",
+  "short_name": "R'tson",
+  "description": "Studio portfolio, 3D gospel flyers, commercial pre-press engineering, and Aftershoot AI photo retouching.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6b00",
+  "categories": ["business", "design", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

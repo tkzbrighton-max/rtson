@@ -1,0 +1,208 @@
+{
+  "entities": {
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "Design project brief and order inquiry submitted by client",
+      "type": "object",
+      "properties": {
+        "clientName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "clientEmail": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "clientPhone": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "selectedStyleCategory": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "specificItemTitle": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "projectDetails": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 5000
+        },
+        "preferredColors": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "deadlineDate": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "totalEstimate": {
+          "type": "number"
+        },
+        "aiBriefGenerated": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "in_progress", "completed"]
+        }
+      },
+      "required": ["clientName", "projectDetails", "totalEstimate"]
+    },
+    "Review": {
+      "title": "Review",
+      "description": "Client testimonial and design rating",
+      "type": "object",
+      "properties": {
+        "clientName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "rating": {
+          "type": "number"
+        },
+        "comment": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "projectCategory": {
+          "type": "string",
+          "maxLength": 100
+        }
+      },
+      "required": ["clientName", "rating", "comment"]
+    },
+    "SiteConfig": {
+      "title": "SiteConfig",
+      "description": "Dynamic website configuration and visual assets stored in Firestore",
+      "type": "object",
+      "properties": {
+        "heroImageUrl": {
+          "type": "string"
+        },
+        "heroHeadline": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "picsartUrl": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "githubRepoUrl": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      }
+    },
+    "PortfolioItem": {
+      "title": "PortfolioItem",
+      "description": "Dynamic portfolio item artwork and image references",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "category": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "categoryLabel": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "imageUrl": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number"
+        },
+        "turnaroundHours": {
+          "type": "number"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "clientType": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "featured": {
+          "type": "boolean"
+        },
+        "aspectRatio": {
+          "type": "string",
+          "maxLength": 20
+        },
+        "dimensionsLabel": {
+          "type": "string",
+          "maxLength": 200
+        }
+      },
+      "required": ["title", "category", "imageUrl", "price"]
+    },
+    "ShowcaseVideo": {
+      "title": "ShowcaseVideo",
+      "description": "Dynamic video or motion flyer showcase item",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "videoUrl": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "type": {
+          "type": "string"
+        },
+        "addedAt": {
+          "type": "string"
+        }
+      },
+      "required": ["title", "videoUrl"]
+    }
+  },
+  "firestore": {
+    "/inquiries/{inquiryId}": {
+      "schema": { "$ref": "#/entities/Inquiry" },
+      "description": "Submitted design order inquiries"
+    },
+    "/reviews/{reviewId}": {
+      "schema": { "$ref": "#/entities/Review" },
+      "description": "Client reviews and ratings"
+    },
+    "/site_config/{configId}": {
+      "schema": { "$ref": "#/entities/SiteConfig" },
+      "description": "Active website configuration & background image references"
+    },
+    "/portfolio_items/{itemId}": {
+      "schema": { "$ref": "#/entities/PortfolioItem" },
+      "description": "Active dynamic portfolio artworks"
+    },
+    "/showcase_videos/{videoId}": {
+      "schema": { "$ref": "#/entities/ShowcaseVideo" },
+      "description": "Active video and motion flyer showcases"
+    }
+  }
+}

@@ -1,0 +1,253 @@
+<svg width="1000" height="1250" viewBox="0 0 1000 1250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradNavy" x1="0" y1="0" x2="1000" y2="1250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020814" />
+      <stop offset="30%" stop-color="#06152d" />
+      <stop offset="70%" stop-color="#040e1f" />
+      <stop offset="100%" stop-color="#020710" />
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0" y1="0" x2="350" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d4f15d" />
+      <stop offset="100%" stop-color="#bef264" />
+    </linearGradient>
+    <filter id="navyCardShadow" x="-10" y="-10" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1000" height="1250" fill="url(#bgGradNavy)" />
+
+  <!-- Diagonal Orange Brand Accent Top Right -->
+  <polygon points="520,0 1000,0 1000,140 680,140" fill="#d4f15d" />
+  <polygon points="695,0 1000,0 1000,120 830,120" fill="#bef264" opacity="0.6" />
+
+  <!-- Header: Rtson Logo Left (Orange Theme as in rtson1.jpeg) -->
+  <g transform="translate(60, 45)">
+    <!-- R Logo Icon (Orange gradient) -->
+    <path d="M14,0 H52 C68,0 80,12 80,28 C80,44 68,54 52,54 L38,54 L38,80 L26,80 L26,54 L12,54 L12,38 L26,24 L26,14 L0,14 Z" fill="#d4f15d" />
+    <path d="M26,14 H48 C58,14 64,20 64,28 C64,36 58,42 48,42 H38 L26,30 Z" fill="#ffffff" />
+    <path d="M0,32 L12,20 L12,38 L0,50 Z" fill="#d4f15d" />
+    <path d="M40,42 L70,80 L52,80 L28,48 Z" fill="#ffffff" />
+    <!-- Typography -->
+    <text x="96" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" fill="#ffffff">Rtson</text>
+    <text x="96" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" fill="#d4f15d">Creations</text>
+    <text x="98" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="8.5" fill="#cbd5e1" letter-spacing="3.2">DESIGN • WEB • DIGITAL</text>
+  </g>
+
+  <!-- Header Right: Script Motto (Orange/White script) -->
+  <g transform="translate(710, 50)">
+    <text x="0" y="24" font-family="'Caveat', 'Brush Script MT', cursive, sans-serif" font-weight="700" font-size="38" fill="#ffffff">Your Vision</text>
+    <text x="35" y="62" font-family="'Caveat', 'Brush Script MT', cursive, sans-serif" font-weight="700" font-size="44" fill="#d4f15d">Our Design</text>
+  </g>
+
+  <!-- Headline Section Left -->
+  <g transform="translate(60, 175)">
+    <!-- Professional Header -->
+    <text x="0" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="28" fill="#ffffff" letter-spacing="1">PROFESSIONAL</text>
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="64" fill="#d4f15d" letter-spacing="-1">WEBSITE</text>
+    <text x="0" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="50" fill="#ffffff" letter-spacing="-0.5">DESIGN SERVICES</text>
+    <text x="0" y="185" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#d4f15d">Modern. Responsive. Affordable.</text>
+    
+    <text x="0" y="225" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="15" fill="#cbd5e1">
+      <tspan x="0" dy="0">We create stunning, user-friendly websites that help</tspan>
+      <tspan x="0" dy="22">you stand out, connect with your audience and</tspan>
+      <tspan x="0" dy="22">grow your brand online.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Hero Right: Multi-Screen Responsive Setup -->
+  <g transform="translate(480, 160)">
+    <!-- Ambient Studio Light Behind Screens -->
+    <ellipse cx="260" cy="140" rx="200" ry="120" fill="#d4f15d" opacity="0.18" filter="blur(50px)" />
+
+    <!-- 1. Large Desktop Display -->
+    <g transform="translate(20, 0)">
+      <rect width="360" height="220" rx="14" fill="#030712" stroke="#475569" stroke-width="4" />
+      <!-- Screen Web Content -->
+      <rect x="8" y="8" width="344" height="204" rx="8" fill="#0f172a" />
+      <rect x="8" y="8" width="344" height="75" fill="#15803d" />
+      <text x="24" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="14" fill="#ffffff">Grow Better Together</text>
+      <text x="24" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#dcfce7">Quality solutions for a brighter future</text>
+      <!-- Stand -->
+      <path d="M165,220 L195,220 L205,255 L155,255 Z" fill="#64748b" />
+      <rect x="140" y="255" width="80" height="8" rx="4" fill="#475569" />
+    </g>
+
+    <!-- 2. Laptop Foreground Left -->
+    <g transform="translate(0, 110)">
+      <rect width="240" height="150" rx="10" fill="#030712" stroke="#64748b" stroke-width="3" />
+      <rect x="6" y="6" width="228" height="138" rx="6" fill="#090d16" />
+      <text x="18" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="12" fill="#38bdf8">Build Your Dream Brand</text>
+      <!-- Keyboard base -->
+      <path d="M-15,150 L255,150 L240,165 L0,165 Z" fill="#334155" />
+    </g>
+
+    <!-- 3. Tablet Right -->
+    <g transform="translate(290, 80)">
+      <rect width="140" height="180" rx="14" fill="#030712" stroke="#64748b" stroke-width="3" />
+      <rect x="6" y="6" width="128" height="168" rx="10" fill="#111827" />
+      <text x="14" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="9" fill="#d4f15d">Shop With Confidence</text>
+      <rect x="14" y="35" width="112" height="60" rx="4" fill="#374151" />
+    </g>
+
+    <!-- 4. Mobile Phone Center-Right -->
+    <g transform="translate(230, 140)">
+      <rect width="70" height="130" rx="12" fill="#000000" stroke="#94a3b8" stroke-width="2.5" />
+      <rect x="4" y="4" width="62" height="122" rx="9" fill="#0f172a" />
+      <circle cx="35" cy="30" r="12" fill="#38bdf8" />
+      <text x="35" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="6" fill="#ffffff" text-anchor="middle">Hi, I'm a Pro</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 6 CORE WEBSITE DESIGN SERVICES CARDS                                      -->
+  <!-- ========================================================================= -->
+  <g transform="translate(60, 480)">
+    <!-- Card 1: Website Design -->
+    <g transform="translate(0, 0)" filter="url(#navyCardShadow)">
+      <rect width="280" height="165" rx="20" fill="#ffffff" />
+      <rect x="20" y="20" width="44" height="44" rx="12" fill="#fff7ed" />
+      <text x="42" y="48" font-family="'Plus Jakarta Sans', monospace" font-weight="900" font-size="20" fill="#bef264" text-anchor="middle">&lt;/&gt;</text>
+      <text x="20" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#0f172a">Website Design</text>
+      <text x="20" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#64748b">
+        <tspan x="20" dy="0">Custom, modern websites built</tspan>
+        <tspan x="20" dy="16">to match your brand and goals.</tspan>
+      </text>
+    </g>
+
+    <!-- Card 2: Blog Websites -->
+    <g transform="translate(300, 0)" filter="url(#navyCardShadow)">
+      <rect width="280" height="165" rx="20" fill="#ffffff" />
+      <rect x="20" y="20" width="44" height="44" rx="12" fill="#fff7ed" />
+      <text x="42" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="22" fill="#bef264" text-anchor="middle">📝</text>
+      <text x="20" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#0f172a">Blog Websites</text>
+      <text x="20" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#64748b">
+        <tspan x="20" dy="0">Share your ideas, build your</tspan>
+        <tspan x="20" dy="16">audience and grow influence.</tspan>
+      </text>
+    </g>
+
+    <!-- Card 3: Brochure Websites -->
+    <g transform="translate(600, 0)" filter="url(#navyCardShadow)">
+      <rect width="280" height="165" rx="20" fill="#ffffff" />
+      <rect x="20" y="20" width="44" height="44" rx="12" fill="#fff7ed" />
+      <text x="42" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="22" fill="#bef264" text-anchor="middle">📖</text>
+      <text x="20" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#0f172a">Brochure Websites</text>
+      <text x="20" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#64748b">
+        <tspan x="20" dy="0">Showcase your business with</tspan>
+        <tspan x="20" dy="16">beautiful informative sites.</tspan>
+      </text>
+    </g>
+
+    <!-- Card 4: Personal Websites -->
+    <g transform="translate(0, 185)" filter="url(#navyCardShadow)">
+      <rect width="280" height="165" rx="20" fill="#ffffff" />
+      <rect x="20" y="20" width="44" height="44" rx="12" fill="#fff7ed" />
+      <text x="42" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="22" fill="#bef264" text-anchor="middle">👤</text>
+      <text x="20" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#0f172a">Personal Websites</text>
+      <text x="20" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#64748b">
+        <tspan x="20" dy="0">Build your online presence</tspan>
+        <tspan x="20" dy="16">and tell your unique story.</tspan>
+      </text>
+    </g>
+
+    <!-- Card 5: Business Websites -->
+    <g transform="translate(300, 185)" filter="url(#navyCardShadow)">
+      <rect width="280" height="165" rx="20" fill="#ffffff" />
+      <rect x="20" y="20" width="44" height="44" rx="12" fill="#fff7ed" />
+      <text x="42" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="22" fill="#bef264" text-anchor="middle">💼</text>
+      <text x="20" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#0f172a">Business Websites</text>
+      <text x="20" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#64748b">
+        <tspan x="20" dy="0">Professional websites that</tspan>
+        <tspan x="20" dy="16">build trust and bring clients.</tspan>
+      </text>
+    </g>
+
+    <!-- Card 6: Ecommerce Websites -->
+    <g transform="translate(600, 185)" filter="url(#navyCardShadow)">
+      <rect width="280" height="165" rx="20" fill="#ffffff" />
+      <rect x="20" y="20" width="44" height="44" rx="12" fill="#fff7ed" />
+      <text x="42" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="22" fill="#bef264" text-anchor="middle">🛒</text>
+      <text x="20" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#0f172a">Ecommerce Websites</text>
+      <text x="20" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#64748b">
+        <tspan x="20" dy="0">Sell products and services</tspan>
+        <tspan x="20" dy="16">online with secure checkout.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 4 VALUE PILLARS STRIP                                                    -->
+  <!-- ========================================================================= -->
+  <g transform="translate(60, 875)">
+    <rect width="880" height="85" rx="16" fill="#081733" stroke="#d4f15d" stroke-width="1.5" stroke-opacity="0.4" />
+    
+    <!-- Pillar 1 -->
+    <g transform="translate(30, 22)">
+      <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#ffffff">📱 Mobile Responsive</text>
+      <text x="24" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#cbd5e1">Looks great on all devices</text>
+    </g>
+
+    <!-- Pillar 2 -->
+    <g transform="translate(250, 22)">
+      <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#ffffff">🛡️ Secure &amp; Reliable</text>
+      <text x="24" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#cbd5e1">Your data, our priority</text>
+    </g>
+
+    <!-- Pillar 3 -->
+    <g transform="translate(470, 22)">
+      <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#ffffff">⚡ Fast Loading</text>
+      <text x="24" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#cbd5e1">Better experience, higher results</text>
+    </g>
+
+    <!-- Pillar 4 -->
+    <g transform="translate(690, 22)">
+      <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#ffffff">🎧 Ongoing Support</text>
+      <text x="24" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#cbd5e1">We're with you every step</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- CTA, CONTACT & QR CODE BANNER                                            -->
+  <!-- ========================================================================= -->
+  <g transform="translate(60, 990)">
+    <!-- CTA Button Left -->
+    <g transform="translate(0, 10)">
+      <rect width="280" height="58" rx="29" fill="url(#limeGrad)" filter="url(#navyCardShadow)" />
+      <text x="140" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle" letter-spacing="1">GET STARTED TODAY →</text>
+      <text x="140" y="75" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#cbd5e1" text-anchor="middle">Let's turn your ideas into a powerful presence.</text>
+    </g>
+
+    <!-- Contact Info Middle -->
+    <g transform="translate(350, 12)">
+      <text x="0" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#ffffff">⚡ Studio Desk Online</text>
+      <text x="0" y="40" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#d4f15d">✉️ info@rtsoncreations.co.zw</text>
+      <text x="0" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#e2e8f0">🌐 www.rtsoncreations.co.zw</text>
+    </g>
+
+    <!-- QR Code Right -->
+    <g transform="translate(730, 0)">
+      <rect width="90" height="90" rx="12" fill="#ffffff" />
+      <g fill="#0f172a">
+        <rect x="10" y="10" width="22" height="22" rx="4" fill="#bef264" /><rect x="14" y="14" width="14" height="14" fill="#ffffff" /><rect x="17" y="17" width="8" height="8" fill="#bef264" />
+        <rect x="58" y="10" width="22" height="22" rx="4" fill="#bef264" /><rect x="62" y="14" width="14" height="14" fill="#ffffff" /><rect x="65" y="17" width="8" height="8" fill="#bef264" />
+        <rect x="10" y="58" width="22" height="22" rx="4" fill="#bef264" /><rect x="14" y="62" width="14" height="14" fill="#ffffff" /><rect x="17" y="65" width="8" height="8" fill="#bef264" />
+        <rect x="38" y="14" width="8" height="8" /><rect x="42" y="26" width="6" height="6" />
+        <rect x="36" y="38" width="18" height="18" fill="#bef264" />
+        <rect x="60" y="38" width="8" height="8" /><rect x="70" y="48" width="10" height="10" />
+        <rect x="38" y="62" width="12" height="6" /><rect x="54" y="68" width="8" height="8" />
+        <rect x="68" y="66" width="12" height="12" fill="#bef264" />
+      </g>
+      <text x="45" y="105" font-family="'Caveat', cursive, sans-serif" font-weight="700" font-size="16" fill="#d4f15d" text-anchor="middle">Scan &amp; Get in Touch</text>
+    </g>
+  </g>
+
+  <!-- Bottom Strip -->
+  <g transform="translate(0, 1205)">
+    <rect width="1000" height="45" fill="#030814" />
+    <text x="500" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="13" fill="#cbd5e1" text-anchor="middle" letter-spacing="4">
+      WEBSITES <tspan fill="#d4f15d">•</tspan> DESIGNS <tspan fill="#d4f15d">•</tspan> BRANDS <tspan fill="#d4f15d">•</tspan> YOUR SUCCESS
+    </text>
+  </g>
+</svg>
